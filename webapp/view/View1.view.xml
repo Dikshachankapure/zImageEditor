@@ -1,0 +1,13 @@
+<mvc:View controllerName="demo.ZImageEditor.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:unified="sap.ui.unified"
+	xmlns="sap.suite.ui.commons.imageeditor" width="100%" height="100%">
+	<ImageEditorContainer id="editor">
+		<ImageEditor id="image" loaded="onImageLoaded"/>
+		<customToolbarControls>
+			<unified:FileUploader change="onFileChange"/>
+			<m:Button text="Upload" press="onUploadPress" blocked="{/blocked}"/>
+			<m:Button type="Emphasized" text="Save As" press="onSaveAsPress" blocked="{/blocked}"/>
+		</customToolbarControls>
+	
+	
+	</ImageEditorContainer>
+</mvc:View>
